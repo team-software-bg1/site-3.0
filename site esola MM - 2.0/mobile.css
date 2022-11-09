@@ -1,0 +1,355 @@
+@media (max-width: 920px) {
+  /*header*/
+
+  body {
+    margin: 0px;
+    padding: 0px;
+
+    overflow-x: hidden;
+  }
+
+  li > a {
+    color: #000;
+  }
+
+  #menu-h {
+    height: 50px;
+    width: 100%;
+
+    border-bottom: transparent;
+
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .link_menu::after {
+    display: none;
+  }
+
+  #btn {
+    display: flex;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: .5rem;
+    margin: 7px;
+  }
+
+  #menu_ul {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    right: 0px;
+    height: 0px;
+    background: #e6e6e6;
+    z-index: 1000;
+    transition: .8s;
+    visibility: hidden;
+    overflow-y: hidden;
+    font-size: 18px;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  #menu_ul > li {
+    margin-top: 10px;
+    margin-left: -20px;
+
+    width: 100%;
+    height: 30px;
+  }
+
+  #menu.active #menu_ul {
+    height: 210px;
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  #menu_ul .link_menu {
+    text-align: start;
+    padding: 1rem 0;
+    width: auto;
+  }
+
+  #bot {
+    display: block;
+    width: 35px;
+    height: .5px;
+    border-top: 4px solid #000;
+    transition: .5s;
+  }
+
+  #bot::after,
+  #bot::before {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 10px 1;
+    border-top: 4px solid #3a3a3a;
+    margin-top: 5px;
+    transition: .5s;
+    position: relative;
+  }
+
+  #menu.active #bot {
+    border-top-color: transparent;
+  }
+
+  #menu.active #bot::before {
+    transform: rotate(135deg)
+  }
+
+  #menu.active #bot::after {
+    transform: rotate(-135deg);
+    top: -9px;
+  }
+
+  #logo {
+    display: none;
+  }
+
+  #logo_mobile {
+    margin: 6px 10px;
+    width: 50px;
+    height: 40px;
+  }
+
+  .menu_active {
+    overflow: hidden;
+  }
+
+  /*fim header*/
+
+  /*inicio conteudo*/
+
+  #img-home {
+    width: 100%;
+  }
+
+  #sobreescola {
+    margin-left: 6px;
+    margin-right: 6px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  #textoescola {
+    margin: 10px 10px;
+    text-align: justify;
+  }
+
+  .textoescola1 {
+    margin: 10px 10px;
+    text-align: justify;
+  }
+
+  .textoescola2 {
+    margin: 10px 10px;
+    text-align: justify;
+  }
+
+  .ler_mais_texto {
+    display: none;
+  }
+
+  #ler,
+  .ocultar_ler_mais {
+    display: none;
+  }
+
+  #cursos {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .conteinerr{
+    background-color: #fafafa;
+    border: 30px solid #fafafa;
+    border-radius: 5px;
+    width: 85%;
+    box-shadow: 5px 5px 5px 5px #f3f3f3;
+    margin-top: 25px;
+    margin-left: 7%;
+    margin-right: 30px;
+    margin-bottom: 7%;
+  }
+ 
+  .raw{
+    text-align: justify;
+  }
+
+  #linha-horizontal{
+    border: 1px solid #000000;
+    margin-left: 30px;
+    margin-right: 40px;
+  }
+
+  .conteinerr1{
+    background-color: #fafafa;
+    border: 30px solid #fafafa;
+    border-radius: 5px;
+    width: 85%;
+    box-shadow: 5px 5px 5px 5px #f3f3f3;
+    margin-top: 25px;
+    margin-left: 7%;
+    margin-right: 30px;
+  }
+
+  .conteinerr2{
+    background-color: #fafafa;
+    border: 30px solid #fafafa;
+    border-radius: 5px;
+    width: 85%;
+    box-shadow: 5px 5px 5px 5px #f3f3f3;
+    margin-top: 25px;
+    margin-left: 7%;
+    margin-right: 30px;
+  }
+
+  .conteinerr3{
+    background-color: #fafafa;
+    border: 30px solid #fafafa;
+    border-radius: 5px;
+    width: 85%;
+    box-shadow: 5px 5px 5px 5px #f3f3f3;
+    margin-top: 25px;
+    margin-left: 7%;
+    margin-right: 30px;
+  }
+
+  #aluno {
+    text-align: center;
+  }
+
+  .horario {
+    margin: auto;
+    max-width: 900px;
+    width: 100%;
+    height: 90%;
+  }
+
+  #FAQ {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  #msg {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+  }
+
+  #textarea {
+    border-radius: 10px;
+    max-width: 100%;
+    min-width: 100%;
+    resize: none;
+    min-height: 100px;
+    border: 1px solid grey;
+  }
+
+  .rodape {
+    background-color: rgb(0, 0, 0);
+    height: 600px;
+  }
+
+  #desenvolvedores {
+    padding-top: 50px;
+    text-align: center;
+    color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #local {
+    margin-top: 60px;
+    text-align: center;
+    color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #direito {
+    margin-top: 60px;
+    text-align: center;
+    color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #desenvolvedores h4 {
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+
+  #local h4 {
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+
+  #direito h4 {
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+
+  #desenvolvedores p {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+
+  #local p {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+
+  #direito p {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+
+  .l {
+    margin-top: -1px;
+    margin-bottom: 10px;
+    border: 1px solid purple;
+    width: 120px;
+  }
+
+  /*cursos*/
+
+  .cursos_buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .cursos_button{
+    background-color: red;
+
+    border: none;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+  }
+  
+  #fundo{
+    width: auto;
+    height: auto;
+  }
+
+  #fundo > img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /*fim cursos*/
+
+  /*fim conteudo*/
+
+}
